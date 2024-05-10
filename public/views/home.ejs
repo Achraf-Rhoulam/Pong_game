@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<% if(theme.theme == "dark") { %>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/homeStyle.css">
+	<% } else { %>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/homeStyleLight.css">
+	<% } %>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+	<title>PongIO</title>
+</head>
+<body>
+	<script src="/js/app.js" type="text/javascript" charset="utf-8" async defer></script>
+	<img src="../images/pngegg.png" class="rounded mx-auto d-block mt-5" style="height: 220px;width: 180px;" alt="PongImg">
+	<h1 class="mb-5">Pong-Boss</h1>
+	<div id="container" class="mt-5">
+		<canvas id="board" width="<%= size.width %>" height="<%= size.height %>"></canvas>
+	</div>
+	<div id="footer" class="mt-5">
+			Made by <a href="#" target="_blank">RHOULAM Achraf</a>
+	</div>
+</body>
+
+</html>

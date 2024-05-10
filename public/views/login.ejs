@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pong BOSS</title>
+	<link rel="shortcut icon" href="../images/pngegg.png" type="image/x-icon">
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/loginStyle.css">
+	<script src="https://use.fontawesome.com/7060f7d9cf.js"></script>
+	<script src="/js/login.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+	<img src="../images/pngegg.png" class="rounded mx-auto d-block mt-5" style="height: 220px;width: 180px;" alt="PongImg">
+	<h1>Pong-Boss</h1>
+	<div id="container">
+		<form action="/" method="post" accept-charset="utf-8">
+			<input type="text" class="mt-5 p-4" name="username" placeholder="Username" maxlength="10" required>
+		    <input type="button" name="teamButton" value="Right">
+		    <br>
+		    <input type="submit" class="p-1" name="join" value="Jouer">
+		    <br>
+	        <div id="settingsContainer">
+	        	<input type="button" class="mt-2 p-1" name="settings" value="Paramètres">
+	        	<ul id="settingsList">  
+	          		<li id="displayNames">Cacher les usernames</li>
+	          		<li id="theme">Theme: Sombre</li>
+	        	</ul>
+	        </div>
+	        <input type="hidden" name="theme" value="dark">
+		    <input type="hidden" name="screenSize" value="large">
+		    <input type="hidden" name="displayNames" value="true">
+		    <input type="hidden" name="team" value="right">
+		</form>
+	</div>
+  <div id="footer" class="mb-5">Made by <a href="#" target="_blank">RHOULAM Achraf</a></div>
+</body>
+</html>

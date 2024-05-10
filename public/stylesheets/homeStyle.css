@@ -1,0 +1,35 @@
+body {
+	background-color: black;
+	color: white;
+}
+
+h1 {
+	font-size: 50px;
+	font-family: 'Press Start 2P', cursive;
+	letter-spacing: 5px;
+	text-align: center;
+	margin-top: -3px;
+	cursor: default;
+}
+
+#container {
+	text-align: center;
+	margin-top: -25px;
+}
+
+canvas {
+	background-color: black;
+	cursor: none;
+}
+
+#footer {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 10px;
+	text-align: center;
+	margin-top: 10px;
+	position: relative;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+}
